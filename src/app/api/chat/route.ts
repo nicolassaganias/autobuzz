@@ -38,8 +38,8 @@ export async function POST(req: Request) {
   const messages = (body.messages ?? []) as UIMessage[];
 
   const result = streamText({
-    // Free-tier friendly Flash model
-    model: google("gemini-2.5-flash"),
+    // Free-tier Flash Lite (stable alias for AI Studio free keys)
+    model: google("gemini-flash-lite-latest"),
     system: buildSystemPrompt(),
     messages: await convertToModelMessages(messages),
     temperature: 0.7,
