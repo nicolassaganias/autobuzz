@@ -24,3 +24,23 @@ En Vercel: Project → Settings → Environment Variables → `GEMINI_API_KEY`.
 - `npm run dev` — local
 - `npm run build` — build de producción
 - `npm start` — servir build
+
+
+## Memoria viva (AutobuzzIA)
+
+En `/ia` podés decir cosas como:
+
+> Guardá que Campanas también se mostró en…
+
+La IA usa herramientas `guardar_dato_autobuzz` / `listar_datos_guardados`.
+
+- Local: escribe en `src/data/knowledge-extra.json`
+- Vercel (recomendado): creá un **Blob Store** y seteá `BLOB_READ_WRITE_TOKEN` para que persista entre deploys
+
+## Deploy en Vercel
+
+1. Importá el repo o reclamá un deploy temporal
+2. Environment Variables:
+   - `GEMINI_API_KEY`
+   - `BLOB_READ_WRITE_TOKEN` (opcional pero recomendado)
+3. Redeploy

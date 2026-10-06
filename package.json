@@ -11,6 +11,7 @@
   "dependencies": {
     "@ai-sdk/google": "^4.0.88",
     "@ai-sdk/react": "^4.0.131",
+    "@vercel/blob": "^2.8.1",
     "ai": "^7.0.128",
     "next": "^15.5.7",
     "react": "^19.2.1",

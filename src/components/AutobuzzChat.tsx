@@ -8,7 +8,7 @@ const suggestions = [
   "¿Qué es Autobuzz?",
   "Contame sobre Campanas",
   "¿Qué obras hicieron en el monte chaqueño?",
-  "Armame un recorrido por las instalaciones",
+  "Guardá este dato: Campanas se mostró también en espacios domésticos intervenidos",
 ];
 
 function messageText(message: {

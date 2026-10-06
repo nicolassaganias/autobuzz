@@ -14,8 +14,8 @@ export default function IaPage() {
         <h1>AutobuzzIA</h1>
         <p>
           Una guía del archivo sonoro. Preguntá por instalaciones, materiales,
-          residencias o pedí un recorrido — como NEXT en CICLIC, pero con la
-          memoria de Autobuzz.
+          residencias o pedí un recorrido. También podés decirle “guardá que…”
+          para sumar datos nuevos a la memoria de Autobuzz.
         </p>
       </div>
       <AutobuzzChat />
