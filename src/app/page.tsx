@@ -32,8 +32,8 @@ export default function HomePage() {
             <Link href="#obras" className="btn btn-primary">
               Ver obras
             </Link>
-            <Link href="/ia" className="btn btn-ghost">
-              Hablar con AutobuzzIA
+            <Link href="/armador" className="btn btn-ghost">
+              Armador de proyectos
             </Link>
           </div>
         </div>
@@ -56,7 +56,13 @@ export default function HomePage() {
 
       <footer className="site-footer">
         ΛUTOBUZZ · archivo vivo ·{" "}
-        <Link href="/ia">AutobuzzIA</Link>
+        <Link href="/referencias">Referencias</Link>
+        {" · "}
+        <Link href="/marco">Marco</Link>
+        {" · "}
+        <Link href="/armador">Armador</Link>
+        {" · "}
+        <Link href="/ia">IA</Link>
       </footer>
     </>
   );

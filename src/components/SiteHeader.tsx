@@ -6,7 +6,10 @@ import { usePathname } from "next/navigation";
 const links = [
   { href: "/", label: "Obras" },
   { href: "/acerca", label: "Acerca" },
-  { href: "/ia", label: "AutobuzzIA", special: true },
+  { href: "/referencias", label: "Referencias" },
+  { href: "/marco", label: "Marco" },
+  { href: "/armador", label: "Armador", special: true },
+  { href: "/ia", label: "IA" },
 ];
 
 export function SiteHeader() {

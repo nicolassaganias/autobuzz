@@ -1,0 +1,72 @@
+{
+  "metodologia": {
+    "title": "Metodología Autobuzz",
+    "summary": "Contemplar los fenómenos que nos rodean, reflexionar sobre ellos y conformar una nueva interpretación atravesada por nuestras técnicas e ideas, con la intención de darle un nuevo punto de vista —por lo general sonoro y visual— al espacio que habitamos.",
+    "ejemploCanonico": {
+      "obra": "después del fuego",
+      "slug": "despues-del-fuego",
+      "contexto": "Residencia MONTE, Tres Horquetas, Chaco, 2019. Un mes habitando el monte chaqueño.",
+      "pasos": [
+        "Habitar y contemplar: observar fenómenos del entorno (eco del monte, canto de pájaros, luciérnagas, trueno, río, insectos, carpinteros).",
+        "Reflexionar: traducir esas observaciones a preguntas sobre percepción, naturaleza y tecnología.",
+        "Reinterpretar: construir piezas electrónicas / sonoras / lumínicas que hibridan lo natural con lo tecnológico.",
+        "Devolver al espacio: instalar las piezas en el mismo territorio habitado, ofreciendo otro punto de vista sonoro-visual."
+      ]
+    },
+    "ciclo": [
+      {
+        "id": "contemplar",
+        "nombre": "Contemplar",
+        "descripcion": "Atender los fenómenos que rodean al colectivo: acústicos, lumínicos, materiales, sociales o territoriales."
+      },
+      {
+        "id": "reflexionar",
+        "nombre": "Reflexionar",
+        "descripcion": "Pensar qué revelan esos fenómenos sobre cómo percibimos y habitamos el espacio."
+      },
+      {
+        "id": "reinterpretar",
+        "nombre": "Reinterpretar",
+        "descripcion": "Atravesar la observación con técnicas, materiales y sensibilidades propias (electrónica, sonido, luz, objetos)."
+      },
+      {
+        "id": "devolver",
+        "nombre": "Devolver al espacio",
+        "descripcion": "Proponer una nueva escucha / mirada del lugar habitado, sin ilustrarlo: desplazarlo."
+      }
+    ]
+  },
+  "marcoTeorico": [
+    {
+      "id": "seed_marco_percepcion",
+      "title": "Percepción sonovisual del espacio",
+      "content": "El sonido y la luz no solo acompañan un espacio: lo constituyen. Autobuzz trabaja sobre cómo estímulos sonoros y visuales reconfiguran el conocimiento corporal de un lugar.",
+      "kind": "marco",
+      "tags": ["percepción", "espacio", "escucha"]
+    },
+    {
+      "id": "seed_marco_hibrido",
+      "title": "Híbrido tecnológico-natural",
+      "content": "La tecnología no se opone a lo natural: lo traduce, lo imita, lo distorsiona y a veces lo atrae (como las luciérnagas digitales). El resultado es un híbrido que resignifica ambos polos.",
+      "kind": "marco",
+      "tags": ["naturaleza", "tecnología", "híbrido"]
+    },
+    {
+      "id": "seed_marco_escucha",
+      "title": "Escucha como descubrimiento",
+      "content": "Más que un modo de recibir información, la escucha es una forma de descubrir. Es generativa, mutante y subjetiva. El silencio no es ausencia de sonido sino el comienzo de la escucha.",
+      "kind": "marco",
+      "tags": ["escucha", "silencio", "generativo"]
+    }
+  ],
+  "ideas": [
+    {
+      "id": "seed_idea_fenomenos",
+      "title": "Partir siempre del fenómeno observado",
+      "content": "Antes de definir materiales o formatos, nombrar con precisión qué fenómeno del entorno motiva la pieza (eco, vibración, patrón de luz, arrastre, granulación).",
+      "kind": "idea",
+      "tags": ["metodología", "observación"]
+    }
+  ],
+  "referencias": []
+}

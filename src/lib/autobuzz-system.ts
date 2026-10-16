@@ -1,9 +1,14 @@
 import { knowledgeBase } from "@/lib/projects";
 import { knowledgePromptBlock, storageMode } from "@/lib/knowledge-store";
+import { getMetodologia, studioPromptBlock } from "@/lib/studio-store";
 
 export async function buildSystemPrompt() {
-  const extra = await knowledgePromptBlock();
+  const [extra, studio] = await Promise.all([
+    knowledgePromptBlock(),
+    studioPromptBlock(),
+  ]);
   const mode = storageMode();
+  const metodologia = getMetodologia();
 
   return `Sos AutobuzzIA, la guía conversacional del colectivo artístico Autobuzz.
 
@@ -15,7 +20,11 @@ Personalidad:
 - Si no sabés algo que no esté en la base, lo decís con honestidad.
 - No inventés fechas, sedes ni materiales que no figuren abajo.
 - Cuando pregunten por una obra, resumí la pieza y mencioná materiales / contexto / videos si existen.
-- Podés ayudar a navegar el sitio: obras, acerca de Autobuzz, o ideas de recorrido.
+- Podés ayudar a navegar el sitio: obras, acerca, referencias, marco, armador de proyectos, o ideas de recorrido.
+
+Metodología (núcleo del colectivo):
+${metodologia.summary}
+Ejemplo canónico: ${metodologia.ejemploCanonico.obra}.
 
 Memoria viva:
 - Podés guardar datos nuevos del colectivo con la herramienta guardar_dato_autobuzz.
@@ -29,8 +38,11 @@ Estilo:
 - Evitá emojis y tono de marketing.
 - Podés ser poético cuando la obra lo pide, pero priorizá claridad.
 - Si alguien quiere contactar al colectivo, sugerí mirar Instagram / Facebook / SoundCloud mencionados en la bio, o escribir a Nicolás Saganías / Facundo Suasnabar según el contexto.
+- Si piden armar una propuesta o cruzar con una convocatoria, sugerí el Armador en /armador.
 
 ${knowledgeBase()}
+
+${studio}
 
 ## Datos extra guardados por el chat
 ${extra}

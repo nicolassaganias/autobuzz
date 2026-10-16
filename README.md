@@ -37,6 +37,23 @@ La IA usa herramientas `guardar_dato_autobuzz` / `listar_datos_guardados`.
 - Local: escribe en `src/data/knowledge-extra.json`
 - Vercel (recomendado): creá un **Blob Store** y seteá `BLOB_READ_WRITE_TOKEN` para que persista entre deploys
 
+## Estudio Autobuzz
+
+Tres espacios de trabajo para armar propuestas:
+
+| Ruta | Para qué |
+| --- | --- |
+| `/referencias` | Banco de referencias: texto, imagen o link |
+| `/marco` | Metodología + ideas + marco teórico |
+| `/armador` | Asistente que cruza método, marco, referencias y bases de convocatoria |
+
+La metodología canónica toma como ejemplo **después del fuego** (residencia MONTE, Chaco): contemplar fenómenos del entorno → reflexionar → reinterpretar con técnicas propias → devolver un punto de vista sonoro/visual al espacio habitado.
+
+Persistencia del estudio:
+
+- Local: `src/data/studio-extra.json` + `public/uploads/`
+- Vercel: mismo `BLOB_READ_WRITE_TOKEN` que la memoria viva
+
 ## Deploy en Vercel
 
 1. Importá el repo o reclamá un deploy temporal
